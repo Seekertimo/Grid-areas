@@ -1,0 +1,88 @@
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+  body{
+    background-color: aqua;
+  }
+
+  section {
+    border: solid 2px black;
+  }
+}
+
+
+@media only screen and (min-width: 600px) {
+  body{
+    background-color: orange;
+    grid-column-gap: 20px;
+    grid-gap: 20px;
+    display: grid;
+    grid-template-columns: 2fr 2fr;
+    grid-template-areas:
+    "header header"
+    "selectionEen selectionTwee"
+    "selectionDrie Afb"
+    "selectionVier Afb"
+    "selectionVijf selectionZes"
+    "selectionZeven selectionAcht"
+    "terzijde selectionNegen"
+    "terzijde selectionTien"
+    "footer footer";
+  }
+
+  section {
+    border: solid 2px black;
+  }
+
+  header          {grid-area: header;}
+  footer          {grid-area: footer; background-color: pink;}
+  aside           {grid-area: terzijde;}
+  img             {grid-area: Afb;}
+  .Veel     {grid-area: selectionEen;}
+  .Variatie  {grid-area: selectionTwee;}
+  .Gezond    {grid-area: selectionDrie;}
+  .Schil    {grid-area: selectionVier;}
+  .Sappig   {grid-area: selectionVijf;}
+  .Historie     {grid-area: selectionZes;}
+  .Oranje   {grid-area: selectionZeven;}
+  .Productie    {grid-area: selectionAcht;}
+  .Boom   {grid-area: selectionNegen;}
+  .Zweden    {grid-area: selectionTien;}
+
+}
+
+
+@media only screen and (min-width: 768px) {
+  body{
+    background-color: lime;
+}
+
+
+@media only screen and (min-width: 992px) {
+  body{
+    background-color: violet;
+    display: grid;
+    grid-template-columns: 2fr 3fr 3fr;
+    grid-template-areas:
+    "header header header"
+    "selectionEen selectionEen selectionTwee"
+    "Afb selectionDrie selectionVier"
+    "Afb selectionVijf selectionZes"
+    "terzijde selectionZeven selectionAcht"
+    "terzijde selectionTien selectionNegen"
+    "footer footer footer";
+  }
+}
+
+
+@media only screen and (min-width: 1200px) {
+  body{
+    background-color: snow;
+  }
+}
+
+body{
+  padding: 0;
+  margin: 0;
+  text-decoration:  none;
+  font-style: italic;
+}
